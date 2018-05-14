@@ -1,6 +1,6 @@
 # Movie Trailer Website
 
-First project in the Udacity Full Stack Engineer Nanodegree.
+First project in the Udacity Full Stack Nanodegree.
 
 This project stores a list of movies, including box art imagery and a movie trailer URL, and generates a static web page allowing visitors to browse movies and watch the trailers.
 
