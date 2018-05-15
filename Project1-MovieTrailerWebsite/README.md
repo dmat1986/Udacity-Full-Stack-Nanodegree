@@ -7,3 +7,5 @@ This project stores a list of movies, including box art imagery and a movie trai
 
 **How To Run:**
 - The project can be run through the 'entertainment_center.py' file.
+- The entertainment_center.py file requires the files 'fresh_tomatoes.py' and 'media.py'
+- Place the files in the same directory, and then run 'entertainment_center.py'
