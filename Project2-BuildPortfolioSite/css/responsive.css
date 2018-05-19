@@ -1,0 +1,125 @@
+/*adding responsiveness to the site*/
+
+@media screen and (max-width: 1024px) {
+    .portfolio-item img {
+        margin: 5px 5px;
+        max-width: 200px;
+        height: 113px;
+    }
+
+    h3 {
+        margin-left: 100px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .portfolio-item img {
+        margin: 0 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .paragraph {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .paragraph {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h4 {
+        font-size: 46px;
+    }
+
+    .paragraph {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+
+    .portfolio-item img {
+        margin: 20px 20px;
+        max-width: 340px;
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    .paragraph {
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+
+    .text {
+        font-size: 22px;
+    }
+
+    .work {
+        font-size: 24px;
+    }
+
+    .portfolio-item img {
+        margin: 30px 30px;
+        max-width: 500px;
+        height: 263px;
+    }
+}
