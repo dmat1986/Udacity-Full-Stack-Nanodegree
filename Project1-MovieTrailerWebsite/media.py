@@ -1,21 +1,21 @@
-import webbrowser
+iimport webbrowser
 
 
 class Movie():
-    """This class provides a way to store movie related information"""
+    """Creates a Movie object using the movie's title, storyline,
+    poster image and youtube trailer.
 
-    valid_ratings = ["G", "PG", "PG-13", "R"]
+    Attributes:
+        movie_title (str): The title of the movie
+        movie_storyline (str): Short description of the movie's plot
+        poster_image_url (str): The url for poster image of the movie
+        trailer_youtube_url (str): The url for the movie's trailer
+    
+    """
 
     def __init__(self, movie_title, movie_storyline, poster_image,
                  trailer_youtube):
-        """
-        Creates a Movie object using the movie's title, storyline,
-        poster image and youtube trailer.
-        """
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
-
-    def show_trailer(self):
-        webbrowser.open(self.trailer_youtube_url)
