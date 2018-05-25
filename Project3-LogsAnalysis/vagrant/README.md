@@ -20,7 +20,7 @@ In order to run this project, the following is required:
 - After the virtual machine has loaded, sign in using ```vagrant ssh```
 - ```cd``` into the vagrant directory with the command ```cd /vagrant```
 - Download and unzip newsdata.sql inside the vagrant directory, from here: https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
-- While in the vagrant directory and and use the command ```psql -d news -f newsdata.sql```
+- While in the vagrant directory, use the command ```psql -d news -f newsdata.sql```
 - Connect to the database using ```psql -d news```
 - Create the following views: 
 ```
