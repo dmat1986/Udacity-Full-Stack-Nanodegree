@@ -23,8 +23,8 @@ In order to run this project, the following is required:
 - While in the vagrant directory and and use the command ```psql -d news -f newsdata.sql```
 - Connect to the database using ```psql -d news```
 - Create the following views: 
-
-```CREATE VIEW path_views AS
+```
+CREATE VIEW path_views AS
 SELECT path, COUNT(*) AS views 
 FROM log where status = '200 OK' GROUP BY log.path ORDER BY views desc;
 
@@ -35,6 +35,7 @@ RIGHT JOIN articles on path_views.path like ('/article/' || articles.slug);
 
 CREATE VIEW errors_log AS 
 SELECT time::date as date, COUNT(case when status = '404 NOT FOUND' then 1 end) AS error, 
-COUNT(*) AS total_requests FROM log GROUP BY date ORDER BY date;```
+COUNT(*) AS total_requests FROM log GROUP BY date ORDER BY date;
+```
 
 - And lastly, to run the program, use the following command: ```python logsanalysis.py```
