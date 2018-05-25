@@ -26,14 +26,14 @@ In order to run this project, the following is required:
 
 ```CREATE VIEW path_views AS
 SELECT path, COUNT(*) AS views 
-FROM log where status = '200 OK' GROUP BY log.path ORDER BY views desc;```
+FROM log where status = '200 OK' GROUP BY log.path ORDER BY views desc;
 
-```CREATE VIEW article_views AS 
+CREATE VIEW article_views AS 
 SELECT articles.author, articles.title, path_views.views 
 FROM path_views 
-RIGHT JOIN articles on path_views.path like ('/article/' || articles.slug);```
+RIGHT JOIN articles on path_views.path like ('/article/' || articles.slug);
 
-```CREATE VIEW errors_log AS 
+CREATE VIEW errors_log AS 
 SELECT time::date as date, COUNT(case when status = '404 NOT FOUND' then 1 end) AS error, 
 COUNT(*) AS total_requests FROM log GROUP BY date ORDER BY date;```
 
