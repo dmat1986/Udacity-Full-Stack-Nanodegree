@@ -1,0 +1,51 @@
+.header__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .searchArea {
+        top: 10px;
+        padding: 7px;
+        width: 50%;
+    }
+
+    .searchArea input {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .header__menu {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      padding: 1em;
+    }
+
+    .header__menu svg {
+      width: 32px;
+      fill: #E0E0E0;
+    }
+
+    #map {
+      left: 0px;
+    }
+
+    .header__title {
+      margin-left: 0;
+      font-size: 2em;
+      vertical-align: bottom; 
+    }
+
+    .list {
+      z-index: 10;
+      width: 300px;
+      position: absolute;
+      -webkit-transform: translate(-300px, 0);
+      transform: translate(-300px, 0);
+      transition: transform 0.3s ease;
+    }
+    .list.open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+}

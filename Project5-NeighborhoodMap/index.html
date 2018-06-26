@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__title">
+          Neighborhood Map
+        </h1>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="list" id="drawer">
+        <div>
+            <h1>Listings</h1>
+            <hr>
+            <div class="searchArea" id="searchArea">
+                <input placeholder="Add a filter" class="search" id="search" data-bind="textInput: search_filter, valueUpdate: 'afterkeydown'">
+            </div>
+            <ul class="results" id="results" data-bind="foreach: filter_array">
+                <li class="place" id="place" data-bind="text: title, click: bounce"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="map" id="map"></div>
+    <script src="js/drawer.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBNp1FF9fqZz067trpyTx5qFYQOAQy-YTM&v=3&callback=initMap" onerror="errorHandler()"></script>
+</body>
+</html>
