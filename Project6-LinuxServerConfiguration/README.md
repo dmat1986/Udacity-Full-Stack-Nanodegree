@@ -4,7 +4,7 @@
 
 SSH Port: 2200
 
-~~URL: ~~~http://ec2-35-183-61-38.ca-central-1.compute.amazonaws.com/~~~~~
+~~URL: ```http://ec2-35-183-61-38.ca-central-1.compute.amazonaws.com/```~~
 
 I have graduated from the program, so the webite can no longer be found at the above addresses.
 
