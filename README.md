@@ -1,5 +1,9 @@
 # Udacity-Full-Stack-Nanodegree
 
+I have now graduated from the program.
+
+![alt text](https://i.imgur.com/SmvqoYW.png)​
+
 List of projects:
 1. Movie Trailer Website
 2. Build a Portfolio Site
