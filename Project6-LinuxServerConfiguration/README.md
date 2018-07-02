@@ -1,10 +1,12 @@
 # Linux Server Configuration
 
-IP Address: 35.183.61.38
+~~IP Address: 35.183.61.38
 
 SSH Port: 2200
 
-URL: http://ec2-35-183-61-38.ca-central-1.compute.amazonaws.com/
+~~URL: http://ec2-35-183-61-38.ca-central-1.compute.amazonaws.com/
+
+I have graduated from the program, so the webite can no longer be found at the above addresses.
 
 ## Required software
 
