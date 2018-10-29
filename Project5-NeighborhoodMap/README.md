@@ -22,5 +22,3 @@ How to run it:
 - Open `index.html` in your browser
 - View the info on each individual marker by clicking on it
 - Filter the locations by using the search box
-
-Here is a preview of the app: https://dmat1986.github.io/
